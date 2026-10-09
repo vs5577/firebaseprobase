@@ -31,12 +31,83 @@
     @media(max-width:900px){.login-panel{padding:30px 22px}.login-box .brand{margin-bottom:30px}}
     @media(max-width:480px){.login-panel{padding:27px 19px}.login-box{max-width:420px}.login-box .brand{margin-bottom:31px}.auth-input{height:57px}.auth-submit{height:53px}.login-box .login-sub{margin-bottom:21px}}
 
+  
+    /* Theme switch: dark is the default; light theme is persisted on this browser. */
+    .theme-toggle{flex:none;color:var(--text);background:var(--panel-2);border-color:var(--line)}
+    .theme-toggle:hover{background:var(--panel-3);color:var(--text)}
+    .theme-toggle-login{position:fixed;top:18px;right:18px;z-index:70;box-shadow:var(--shadow)}
+    html[data-theme="light"]{color-scheme:light;--bg:#f4f7fc;--panel:#ffffff;--panel-2:#edf2fa;--panel-3:#e4ebf7;--line:rgba(31,48,83,.14);--text:#19243a;--muted:#64728b;--blue:#4169d8;--blue2:#3456bf;--cyan:#087f78;--purple:#7056d6;--danger:#c93850;--success:#13845c;--shadow:0 24px 70px rgba(26,39,68,.15)}
+    html[data-theme="light"] body{background:radial-gradient(ellipse at 75% -15%,rgba(73,103,198,.10),transparent 43%),var(--bg);color:var(--text)}
+    html[data-theme="light"] .sidebar{background:rgba(255,255,255,.93);border-right-color:var(--line)}
+    html[data-theme="light"] .topbar{background:rgba(248,250,255,.9);border-bottom-color:var(--line)}
+    html[data-theme="light"] .nav-item{color:#596982}
+    html[data-theme="light"] .nav-item:hover{background:#edf2fb;color:var(--text)}
+    html[data-theme="light"] .nav-item.active{background:linear-gradient(90deg,rgba(65,105,216,.13),rgba(65,105,216,.045));border-color:rgba(65,105,216,.2);color:#244aa8}
+    html[data-theme="light"] .nav-count{background:#e7edf8;color:#586985}
+    html[data-theme="light"] .account-dot{background:#e8eefc;color:#3859b1}
+    html[data-theme="light"] .security-card{background:linear-gradient(145deg,#f0f4fc,#fff)}
+    html[data-theme="light"] .icon-button{background:#fff;color:#52617b;border-color:var(--line)}
+    html[data-theme="light"] .icon-button:hover{background:#edf2fb;color:#1e2d48}
+    html[data-theme="light"] .search-input{background:#fff;color:var(--text);border-color:var(--line)}
+    html[data-theme="light"] .search-input::placeholder{color:#8b98ad}
+    html[data-theme="light"] .btn-secondary{background:#fff;border-color:var(--line);color:#33415c}
+    html[data-theme="light"] .btn-secondary:hover{background:#edf2fb}
+    html[data-theme="light"] .stat-card{background:linear-gradient(145deg,#fff,#f0f4fb)}
+    html[data-theme="light"] .stat-icon{background:#edf2fb}
+    html[data-theme="light"] .stat-foot{color:#75829a}
+    html[data-theme="light"] .surface{background:rgba(255,255,255,.9)}
+    html[data-theme="light"] .project-row,html[data-theme="light"] .account-row{background:#f8faff}
+    html[data-theme="light"] .project-row:hover,html[data-theme="light"] .account-row:hover{background:#eef3fc;border-color:var(--line)}
+    html[data-theme="light"] .firebase-mark{background:linear-gradient(135deg,#e9efff,#f4f6ff);border-color:#cbd8f9;color:#4169c6}
+    html[data-theme="light"] .project-account{color:#506b9c}
+    html[data-theme="light"] .mini-action{color:#667794}
+    html[data-theme="light"] .mini-action:hover{background:#e8eef9;color:#263957}
+    html[data-theme="light"] .account-total{background:#eaf0ff;color:#345bc0}
+    html[data-theme="light"] .empty-state{border-color:#c8d2e4}
+    html[data-theme="light"] .empty-illustration{background:#e9efff}
+    html[data-theme="light"] .project-card{background:linear-gradient(160deg,#fff,#f7f9fe)}
+    html[data-theme="light"] .project-card:hover{border-color:#a8bdf2}
+    html[data-theme="light"] .card-id{color:#4169c8}
+    html[data-theme="light"] .tag{color:#53637e;background:#f0f4fb;border-color:var(--line)}
+    html[data-theme="light"] .count-label{color:#53637e}
+    html[data-theme="light"] .chip{background:#fff;color:#566680}
+    html[data-theme="light"] .chip.active{background:#eaf0ff;border-color:#cbd8ff;color:#3157b8}
+    html[data-theme="light"] .sort-select{background:#fff;color:#34435e;border-color:var(--line)}
+    html[data-theme="light"] .footer-note{color:#77839a}
+    html[data-theme="light"] .login-screen{background:var(--bg)}
+    html[data-theme="light"] .login-art{background:radial-gradient(ellipse at 25% 35%,rgba(85,120,255,.15),transparent 35%),radial-gradient(ellipse at 85% 90%,rgba(99,82,216,.10),transparent 40%),#eaf0fb;border-right-color:var(--line)}
+    html[data-theme="light"] .login-content p{color:#586987}
+    html[data-theme="light"] .feature-pills span{background:#ffffffb8;color:#42526e;border-color:#d5deef}
+    html[data-theme="light"] .login-foot{color:#6d7a91}
+    html[data-theme="light"] .google-btn{background:#fff;color:#19243a;border-color:#d8dfeb}
+    html[data-theme="light"] .google-btn:hover{background:#f8faff}
+    html[data-theme="light"] .login-divider{color:#7a879d}
+    html[data-theme="light"] .auth-input{background:#fff;color:#19243a;border-color:#d2dbea}
+    html[data-theme="light"] .auth-input::placeholder{color:#8c98ad}
+    html[data-theme="light"] .auth-field label{color:#455570}
+    html[data-theme="light"] .text-button{color:#4169c8}
+    html[data-theme="light"] .login-note{color:#71809a}
+    html[data-theme="light"] .login-note strong{color:#425675}
+    html[data-theme="light"] .auth-required-note{color:#74819a}
+    html[data-theme="light"] .modal{background:#fff;border-color:#dce3ef}
+    html[data-theme="light"] .modal-header{border-bottom-color:var(--line)}
+    html[data-theme="light"] .field label{color:#43516b}
+    html[data-theme="light"] .field small{color:#73819a}
+    html[data-theme="light"] .field input,html[data-theme="light"] .field textarea,html[data-theme="light"] .field select{background:#f9fbff;color:#1b2941;border-color:#d2dbea}
+    html[data-theme="light"] .field input::placeholder,html[data-theme="light"] .field textarea::placeholder{color:#8c98ad}
+    html[data-theme="light"] .toast{background:#fff;color:#1c2940;border-color:#dce3ef}
+    html[data-theme="light"] .loading-overlay{background:#f4f7fc}
+    html[data-theme="light"] .loading-card p{color:#64728b}
+    html[data-theme="light"] .danger-zone{background:#fff5f6;color:#a52841;border-color:#f3cbd2}
+    @media(max-width:680px){.theme-toggle-login{top:12px;right:12px}}
+
   </style>
 </head>
 <body>
   <div class="loading-overlay" id="loadingOverlay"><div class="loading-card"><div class="spinner"></div><p>Preparing your project vault…</p></div></div>
 
   <section class="login-screen hidden" id="loginScreen">
+    <button id="themeToggleLogin" class="icon-button theme-toggle theme-toggle-login" type="button" aria-label="Switch to light theme" title="Switch to light theme"></button>
     <div class="login-art">
       <div class="brand"><div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.7 16a3.9 3.9 0 0 0 3.4 5.8h7.8a3.9 3.9 0 0 0 3.4-5.8L12 3Z"/><path d="m12 3 2.9 7.2M8 21l4-7.5 4 7.5"/></svg></div><div><div class="brand-name">Firebase <span>Atlas</span></div><div class="brand-sub">YOUR PROJECT MEMORY</div></div></div>
       <div class="login-content"><div class="eyebrow">One place. Every project.</div><h1>Never lose track of your <em>Firebase universe.</em></h1><p>Keep every Firebase account, project ID, console shortcut and note organized in one clean, searchable workspace. Built for developers who ship lots of projects.</p><div class="feature-pills"><span>✦ Account directory</span><span>↗ One-click console</span><span>⌘ Live cloud sync</span><span>◈ Private workspace</span></div></div>
@@ -76,7 +147,7 @@
     </aside>
 
     <main class="main-area">
-      <header class="topbar"><div class="top-left"><button id="mobileMenu" class="icon-button mobile-menu" aria-label="Open navigation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><div class="breadcrumb">Workspace <span style="color:#42506a;margin:0 7px">/</span> <strong id="breadcrumbTitle">Overview</strong></div></div><div class="top-actions"><label class="search-wrap"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="globalSearch" class="search-input" type="search" placeholder="Search accounts, projects…" autocomplete="off" aria-label="Search accounts and projects" /></label><button id="exportBtn" class="btn btn-secondary" title="Export your catalog as JSON"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m-4-4 4 4 4-4"/><path d="M5 17v3h14v-3"/></svg></button><button id="topAddProject" class="btn btn-primary"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span class="top-add-label">Add project</span></button></div></header>
+      <header class="topbar"><div class="top-left"><button id="mobileMenu" class="icon-button mobile-menu" aria-label="Open navigation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><div class="breadcrumb">Workspace <span style="color:#42506a;margin:0 7px">/</span> <strong id="breadcrumbTitle">Overview</strong></div></div><div class="top-actions"><button id="themeToggleApp" class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"></button><label class="search-wrap"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="globalSearch" class="search-input" type="search" placeholder="Search accounts, projects…" autocomplete="off" aria-label="Search accounts and projects" /></label><button id="exportBtn" class="btn btn-secondary" title="Export your catalog as JSON"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m-4-4 4 4 4-4"/><path d="M5 17v3h14v-3"/></svg></button><button id="topAddProject" class="btn btn-primary"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span class="top-add-label">Add project</span></button></div></header>
       <div class="page-content" id="mainContent"></div>
     </main>
   </div>
@@ -107,8 +178,8 @@
     document.documentElement.dataset.auth = 'login';
 
     const SEED_ACCOUNTS = [
-      { displayName: 'V Surya', email: 'krishnasurya2011@gmail.com', projects: [
-        ['MusicRoom','musicroom-c79d0',''],['musicweb','musicweb-26987',''],['webbook','webbook-fd668',''],['siph','siph-2488b',''],['athena','athena-7f2be',''],['Finance tracker','finance-tracker-73854',''],['RajaRaniGame','rajaranigame-e99fc',''],['MusicSync','musicsync-5b5be','']
+      { displayName: 'V', email: 'krishnasurya2011@gmail.com', projects: [
+        ['MusicRoom','musicroom-c79d0',''],['musicweb','musicweb-26987',''],['webbook','webbook-fd668',''],['siph','siph-2488b',''],['athena','athena-7f2be',''],['Finance tracker','finance-tracker-73854',''],['RajaRaniGame','rajaranigame-e99fc',''],['MusicSync','musicsync-5b5fe','']
       ]},
       { displayName: 'Vijaysm', email: 'w708539@gmail.com', projects: [
         ['Firestoreprojectbase','firestoreprojectbase','Firebase Atlas database and authentication project'],['Project-record','project-record-d2dd9',''],['siph','siph-9c695',''],['Bookhub','bookhub-c4229',''],['UNOpro','unopro-e0784','']
@@ -131,6 +202,29 @@
     ];
 
     const $ = (id) => document.getElementById(id);
+
+    // Theme preference is local to this browser and works before or after sign-in.
+    const readSavedTheme = () => {
+      try { return localStorage.getItem('firebaseAtlasTheme') === 'light' ? 'light' : 'dark'; }
+      catch { return 'dark'; }
+    };
+    function setTheme(theme) {
+      const next = theme === 'light' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      const metaTheme = document.querySelector('meta[name="theme-color"]');
+      if (metaTheme) metaTheme.content = next === 'light' ? '#f4f7fc' : '#090d18';
+      try { localStorage.setItem('firebaseAtlasTheme', next); } catch { /* Theme still works for this page. */ }
+      const icon = next === 'dark'
+        ? '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>'
+        : '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6.5 6.5 0 0 0 8.268 8.268c.344-.215.825-.003.803.401Z"/></svg>';
+      const label = next === 'dark' ? 'Switch to light theme' : 'Switch to dark theme';
+      ['themeToggleLogin', 'themeToggleApp'].forEach(id => {
+        const button = $(id);
+        if (button) { button.innerHTML = icon; button.title = label; button.setAttribute('aria-label', label); }
+      });
+    }
+    function toggleTheme() { setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'); }
+    setTheme(readSavedTheme());
     const state = { user: null, accounts: [], currentView: 'overview', activeAccountId: null, search: '', projectFilter: 'all', sort: 'name', unsubscribe: null, mobileNavOpen: false, busy: false };
     let authMode = 'login';
     const ICONS = {
@@ -159,20 +253,55 @@
     function showLogin(error='') { $('appShell').style.display='none'; $('loginScreen').classList.remove('hidden'); $('loadingOverlay').classList.add('hidden'); if(error) showAuthError(error); else { $('loginError').textContent=''; $('loginError').classList.add('hidden'); } updateAuthModeUI(); }
     function showApp() { $('loginScreen').classList.add('hidden'); $('appShell').style.display='block'; $('sidebarUserName').textContent=state.user.displayName || 'Firebase developer'; $('sidebarUserEmail').textContent=state.user.email || ''; $('sidebarAvatar').textContent=shortName(state.user.displayName || state.user.email || 'U'); }
 
+    // Stable IDs make the starter catalog idempotent and easy to inspect in Firestore.
+    // Starter data is written only when the accounts subcollection is empty.
+    // The old meta/workspace marker is intentionally ignored so clearing the accounts
+    // subcollection is enough to request a clean seed again.
+    const stableAccountDocId = (email) => 'acct-' + String(email || '')
+      .trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
     async function seedWorkspaceIfNeeded(user) {
-      const markerRef = doc(db,'users',user.uid,'meta','workspace');
-      const marker = await getDoc(markerRef);
-      if(marker.exists()) return;
-      const existing = await getDocs(collection(db,'users',user.uid,'accounts'));
+      const userAccountsRef = collection(db, 'users', user.uid, 'accounts');
+      const existing = await getDocs(userAccountsRef);
+      if (!existing.empty) return;
+
       const batch = writeBatch(db);
-      if(existing.empty) {
-        SEED_ACCOUNTS.forEach(account => {
-          const ref = doc(collection(db,'users',user.uid,'accounts'));
-          const projects = account.projects.map(([name,projectId,description]) => ({id:crypto.randomUUID(),name,projectId,description,notes:'',favorite:false,createdAt:Date.now(),updatedAt:Date.now()}));
-          batch.set(ref,{displayName:account.displayName,email:account.email,projects,createdAt:Date.now(),updatedAt:Date.now(),seeded:true});
+      const now = Date.now();
+      const starterProjectCount = SEED_ACCOUNTS.reduce((sum, account) => sum + account.projects.length, 0);
+
+      SEED_ACCOUNTS.forEach(account => {
+        const accountId = stableAccountDocId(account.email);
+        const ref = doc(db, 'users', user.uid, 'accounts', accountId);
+        const projects = account.projects.map(([name, projectId, description]) => ({
+          id: `seed-${projectId}`,
+          name,
+          projectId,
+          description,
+          notes: '',
+          favorite: false,
+          seeded: true,
+          createdAt: now,
+          updatedAt: now
+        }));
+        batch.set(ref, {
+          displayName: account.displayName,
+          email: account.email.trim().toLowerCase(),
+          projects,
+          createdAt: now,
+          updatedAt: now,
+          seeded: true,
+          seedVersion: 3
         });
-      }
-      batch.set(markerRef,{initialized:true,seededStarterCatalog:existing.empty,initializedAt:Date.now()});
+      });
+
+      batch.set(doc(db, 'users', user.uid, 'meta', 'workspace'), {
+        initialized: true,
+        seededStarterCatalog: true,
+        seedVersion: 3,
+        seededAccountCount: SEED_ACCOUNTS.length,
+        seededProjectCount: starterProjectCount,
+        initializedAt: now
+      });
       await batch.commit();
     }
 
@@ -313,12 +442,18 @@
 
     function closeModal(){ $('modalRoot').innerHTML=''; }
     async function saveAccount(mode,id,data){
-      if(mode==='edit') { await updateDoc(accountRef(id),{...data,updatedAt:Date.now()}); }
-      else { await addDoc(accountsPath(),{...data,projects:[],createdAt:Date.now(),updatedAt:Date.now()}); }
+      const normalizedEmail = String(data.email || '').trim().toLowerCase();
+      const duplicate = state.accounts.find(a => String(a.email || '').trim().toLowerCase() === normalizedEmail && a.id !== id);
+      if (duplicate) throw new Error(`The account ${normalizedEmail} is already in your catalog.`);
+      const cleanData = {...data, email: normalizedEmail};
+      if(mode==='edit') { await updateDoc(accountRef(id),{...cleanData,updatedAt:Date.now()}); }
+      else { await addDoc(accountsPath(),{...cleanData,projects:[],createdAt:Date.now(),updatedAt:Date.now()}); }
     }
     async function saveProject(mode,oldAccountId,projectId,data){
       const source=state.accounts.find(a=>a.id===oldAccountId); const target=state.accounts.find(a=>a.id===data.accountId);
       if(!target)throw new Error('Choose a valid account for this project.');
+      const duplicate=(target.projects||[]).find(p=>String(p.projectId||'').toLowerCase()===String(data.projectId||'').trim().toLowerCase() && !(mode==='edit' && source?.id===target.id && p.id===projectId));
+      if(duplicate)throw new Error(`Project ID ${data.projectId} is already listed under ${target.email}.`);
       const now=Date.now();
       let project;
       if(mode==='edit'&&source){const existing=(source.projects||[]).find(p=>p.id===projectId);if(!existing)throw new Error('This project was not found. Refresh and try again.');project={...existing,...data,id:existing.id,createdAt:existing.createdAt||now,updatedAt:now};}
@@ -376,6 +511,8 @@
         else if(action==='export-json')exportJson();
       }catch(error){console.error(error);toast(friendlyError(error),'error');}
     });
+    $('themeToggleLogin').addEventListener('click', toggleTheme);
+    $('themeToggleApp').addEventListener('click', toggleTheme);
     $('globalSearch').addEventListener('input',e=>{state.search=e.target.value;renderContent();});
     $('topAddProject').addEventListener('click',()=>openModal('project'));
     $('sideAddAccount').addEventListener('click',()=>openModal('account'));
